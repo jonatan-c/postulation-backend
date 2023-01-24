@@ -1,0 +1,10 @@
+dist
+package-lock.json
+
+.next
+
+README
+postcss.config.js
+tailwind.config.js
+tsconfig.json
+yarn.lock
