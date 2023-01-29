@@ -18,20 +18,20 @@ export class Postulation {
 	id: number;
 
 	@ApiProperty()
+	@Column({ type: 'varchar', length: 100 })
+	company: string;
+
+	@ApiProperty()
 	@Column({ type: 'date' })
 	dateSend: string;
 
 	@ApiProperty()
-	@Column({ type: 'boolean' })
+	@Column({ type: 'boolean', default: false })
 	feedback: boolean;
 
 	@ApiProperty()
 	@Column({ type: 'date' })
 	dateFeedback: string;
-
-	@ApiProperty()
-	@Column({ type: 'varchar', length: 100 })
-	company: string;
 
 	@ApiProperty()
 	@Column({ type: 'varchar', length: 255 })

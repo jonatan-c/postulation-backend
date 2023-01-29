@@ -6,6 +6,14 @@ export class CreatePostulationDto {
 	id?: number;
 
 	@ApiProperty()
+	@IsString()
+	@MaxLength(30)
+	@IsNotEmpty()
+	@MinLength(3)
+	company: string;
+
+	@ApiProperty()
+	@IsNotEmpty()
 	dateSend: string;
 
 	@ApiProperty()
@@ -15,13 +23,6 @@ export class CreatePostulationDto {
 	dateFeedback: string;
 
 	@ApiProperty()
-	@ApiProperty()
-	@IsString()
-	@MaxLength(30)
-	@IsNotEmpty()
-	@MinLength(3)
-	company: string;
-
 	description?: string;
 
 	@ApiProperty()
