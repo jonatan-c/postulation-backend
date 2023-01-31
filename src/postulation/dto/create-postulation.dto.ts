@@ -17,19 +17,19 @@ export class CreatePostulationDto {
 	dateSend: string;
 
 	@ApiProperty()
-	feedback: boolean;
+	feedback?: boolean;
 
 	@ApiProperty()
-	dateFeedback: string;
+	dateFeedback?: string;
 
 	@ApiProperty()
 	description?: string;
 
 	@ApiProperty()
-	createdAt: Date;
+	createdAt?: Date;
 
 	@ApiProperty()
-	updatedAt: Date;
+	updatedAt?: Date;
 
 	@ApiProperty()
 	userId?: number;

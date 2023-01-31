@@ -26,7 +26,7 @@ export class Postulation {
 	dateSend: string;
 
 	@ApiProperty()
-	@Column({ type: 'boolean', default: false })
+	@Column({ type: 'boolean' })
 	feedback: boolean;
 
 	@ApiProperty()
